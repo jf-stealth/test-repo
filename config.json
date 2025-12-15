@@ -1,0 +1,217 @@
+{
+  "nodes": [
+    {
+      "id": "node-0",
+      "position": { "x": 0, "y": 0 },
+      "data": { "nodeType": "Start Node", "label": "Request Start Node" }
+    },
+    {
+      "id": "node-1",
+      "position": { "x": 300, "y": 0 },
+      "data": {
+        "nodeType": "CORS Headers",
+        "label": "CORS Headers",
+        "allowOrigin": [
+          "concat",
+          ["const", "t"],
+          ["const", "e"],
+          ["const", "s"],
+          ["const", "t"]
+        ],
+        "allowMethods": [
+          "const",
+          [
+            ["concat", ["const", "G"], ["const", "E"], ["const", "T"]],
+            [
+              "concat",
+              ["const", "P"],
+              ["const", "O"],
+              ["const", "S"],
+              ["const", "T"]
+            ],
+            ["concat", ["const", "P"], ["const", "U"], ["const", "T"]],
+            [
+              "concat",
+              ["const", "D"],
+              ["const", "E"],
+              ["const", "L"],
+              ["const", "E"],
+              ["const", "T"],
+              ["const", "E"]
+            ],
+            [
+              "concat",
+              ["const", "O"],
+              ["const", "P"],
+              ["const", "T"],
+              ["const", "I"],
+              ["const", "O"],
+              ["const", "N"],
+              ["const", "S"]
+            ]
+          ]
+        ],
+        "allowHeaders": [
+          "concat",
+          ["const", "C"],
+          ["const", "o"],
+          ["const", "n"],
+          ["const", "t"],
+          ["const", "e"],
+          ["const", "n"],
+          ["const", "t"],
+          ["const", "-"],
+          ["const", "T"],
+          ["const", "y"],
+          ["const", "p"],
+          ["const", "e"],
+          ["const", ","],
+          ["const", " "],
+          ["const", "A"],
+          ["const", "u"],
+          ["const", "t"],
+          ["const", "h"],
+          ["const", "o"],
+          ["const", "r"],
+          ["const", "i"],
+          ["const", "z"],
+          ["const", "a"],
+          ["const", "t"],
+          ["const", "i"],
+          ["const", "o"],
+          ["const", "n"]
+        ],
+        "allowCredentials": [
+          "concat",
+          ["const", "t"],
+          ["const", "r"],
+          ["const", "u"],
+          ["const", "e"]
+        ],
+        "exposeHeaders": [
+          "concat",
+          ["const", "X"],
+          ["const", "-"],
+          ["const", ["C"]],
+          ["const", "-"],
+          ["const", ["H"]],
+          ["const", "-"],
+          ["const", ["e"]],
+          ["const", "-"],
+          ["const", ["a"]],
+          ["const", "-"],
+          ["const", ["d"]],
+          ["const", "-"],
+          ["const", ["e"]],
+          ["const", "-"],
+          ["const", ["r"]]
+        ],
+        "maxAge": [
+          "concat",
+          ["const", "3"],
+          ["const", "6"],
+          ["const", "0"],
+          ["const", "0"]
+        ]
+      }
+    },
+    {
+      "id": "node-2",
+      "position": { "x": 600, "y": 0 },
+      "data": {
+        "nodeType": "Request Fetch",
+        "label": "Request Fetch",
+        "url": {
+          "hostname": ["const", "raw.githubusercontent.com"],
+          "pathname": [
+            "concat",
+            ["const", "/"],
+            ["const", "m"],
+            ["const", "o"],
+            ["const", "h"],
+            ["const", "a"],
+            ["const", "n"],
+            ["const", "k"],
+            ["const", "u"],
+            ["const", "m"],
+            ["const", "a"],
+            ["const", "r"],
+            ["const", "e"],
+            ["const", "l"],
+            ["const", "e"],
+            ["const", "c"],
+            ["const", "/"],
+            ["const", "a"],
+            ["const", "i"],
+            ["const", "r"],
+            ["const", "g"],
+            ["const", "a"],
+            ["const", "p"],
+            ["const", "p"],
+            ["const", "e"],
+            ["const", "d"],
+            ["const", "-"],
+            ["const", "q"],
+            ["const", "r"],
+            ["const", "-"],
+            ["const", "c"],
+            ["const", "o"],
+            ["const", "d"],
+            ["const", "e"],
+            ["const", "-"],
+            ["const", "t"],
+            ["const", "r"],
+            ["const", "a"],
+            ["const", "n"],
+            ["const", "s"],
+            ["const", "f"],
+            ["const", "e"],
+            ["const", "r"],
+            ["const", "/"],
+            ["const", "r"],
+            ["const", "e"],
+            ["const", "f"],
+            ["const", "s"],
+            ["const", "/"],
+            ["const", "h"],
+            ["const", "e"],
+            ["const", "a"],
+            ["const", "d"],
+            ["const", "s"],
+            ["const", "/"],
+            ["const", "m"],
+            ["const", "a"],
+            ["const", "s"],
+            ["const", "t"],
+            ["const", "e"],
+            ["const", "r"],
+            ["const", "/"],
+            ["const", "r"],
+            ["const", "e"],
+            ["const", "a"],
+            ["const", "d"],
+            ["const", "m"],
+            ["const", "e"],
+            ["const", "."],
+            ["const", "m"],
+            ["const", "d"]
+          ]
+        },
+        "headers": ["const", { "Content-Type": "application/json" }]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "node-0",
+      "target": "node-1",
+      "sourceHandle": "default"
+    },
+    {
+      "id": "edge-1",
+      "source": "node-1",
+      "target": "node-2",
+      "sourceHandle": "default"
+    }
+  ]
+}
